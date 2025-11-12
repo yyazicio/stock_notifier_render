@@ -8,9 +8,9 @@ def fetch_and_analyze(tickers):
         try:
             stock = yf.Ticker(t)
             info = stock.info
-            pe = info.get('trailingPE', None)
-            pb = info.get('priceToBook', None)
-            peg = info.get('pegRatio', None)
+            pe = info.get('trailingPE') or 15  # PE yoksa 15 al
+            pb = info.get('priceToBook') or 1.5
+            peg = info.get('pegRatio') or 1.0
             price = info.get('currentPrice', None)
             name = info.get('shortName', t)
 
