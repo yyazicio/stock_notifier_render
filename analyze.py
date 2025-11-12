@@ -14,8 +14,8 @@ def fetch_and_analyze(tickers):
             price = info.get('currentPrice', None)
             name = info.get('shortName', t)
 
-            if pe and pb and peg:
-                score = (1/pe + 1/pb + 1/peg) / 3
+            if pe is not None and pb is not None:
+                score = (1/pe + 1/pb)/2
                 data.append([name, t, pe, pb, peg, price, score])
         except Exception:
             pass
