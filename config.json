@@ -1,0 +1,9 @@
+{
+  "SLACK_WEBHOOK_URL": "https://hooks.slack.com/services/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",
+  "INDEXES": [
+    "^GDAXI",
+    "^IXIC",
+    "^GSPC"
+  ],
+  "TOP_N": 5
+}
