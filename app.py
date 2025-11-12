@@ -9,8 +9,7 @@ st.title("📈 Stock Valuation Dashboard")
 with open("config.json") as f:
     cfg = json.load(f)
 
-indexes = cfg["INDEXES"]
-st.sidebar.header("Settings")
+indexes = list(cfg["INDEXES"].keys())
 selected_index = st.sidebar.selectbox("Select Market Index", indexes)
 
 st.write(f"Fetching data for **{selected_index}**...")
