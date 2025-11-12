@@ -1,9 +1,9 @@
 {
   "SLACK_WEBHOOK_URL": "https://hooks.slack.com/services/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",
-  "INDEXES": [
-    "^GDAXI",
-    "^IXIC",
-    "^GSPC"
-  ],
+  "INDEXES": {
+    "DAX": ["BMW.DE","SAP.DE","DAI.DE","ALV.DE","BAS.DE","VOW3.DE","LIN.DE","MUV2.DE","BAYN.DE","HEI.DE"],
+    "NASDAQ": ["AAPL","MSFT","NVDA","TSLA","GOOGL","AMZN","META","PYPL","INTC","ADBE"],
+    "S&P500": ["TSLA","AAPL","MSFT","AMZN","GOOGL","NVDA","META","BRK-B","JPM","V"]
+  },
   "TOP_N": 5
 }
